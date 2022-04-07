@@ -56,7 +56,10 @@ flutter:
   fonts:
     - family: Raleway
       fonts:
-        - asset: fonts/
+        - asset: fonts/Raleway-Regular.ttf
+        - asset: fonts/Raleway-Italic.ttf
+          style: italic
+
 
   #   - family: Trajan Pro
   #     fonts:

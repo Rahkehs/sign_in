@@ -6,7 +6,6 @@ import 'package:flutter_auth/Screens/Login/login_screen.dart';
 import 'package:flutter_auth/Screens/Signup/signup_screen.dart';
 import 'package:flutter_auth/Screens/Welcome/components/background.dart';
 import 'package:flutter_auth/components/rounded_button.dart';
-import 'package:flutter_auth/constants.dart';
 import 'package:flutter/src/widgets/basic.dart';
 
 class Body extends StatelessWidget {
@@ -33,8 +32,9 @@ class Body extends StatelessWidget {
             Text('MY MONEY PLAN',
               style: TextStyle(
                   color: Colors.white,
+                  fontFamily: "Raleway",
                   fontSize: 28,
-                  fontWeight: FontWeight.bold
+                  fontWeight: FontWeight.w600
               ),
             ),
             SizedBox(height: size.height * 0.009),
