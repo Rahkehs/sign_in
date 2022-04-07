@@ -26,12 +26,13 @@ class Body extends StatelessWidget {
             ),
             SizedBox(height: size.height * 0.02),
             Text(
-              "LOGIN",
+              "Welcome again!",
               style: TextStyle(
-                  color: Colors.deepOrangeAccent,
+                  color: Colors.limeAccent,
                   fontSize: 18,
                   fontWeight: FontWeight.bold),
             ),
+            SizedBox(height: size.height * 0.003),
             Text(
               'Please log into your existing account',
                   style: TextStyle(

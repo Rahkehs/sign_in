@@ -19,9 +19,11 @@ class Body extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              "SIGNUP",
+              "Let’s help you meet up your Goal",
               style: TextStyle(
-                  color: Colors.white70,
+                  color: Colors.white,
+                  fontFamily: "Raleway.ttf",
+
                   fontWeight: FontWeight.bold),
             ),
             SizedBox(height: size.height * 0.03),
@@ -36,7 +38,7 @@ class Body extends StatelessWidget {
             RoundedPasswordField1(
               onChanged: (value) {},
             ),
-            RoundedPasswordField1(
+            RoundedPasswordField2(
               onChanged: (value) {},
             ),
             RoundedButton(
