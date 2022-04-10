@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) => MaterialApp(
     debugShowCheckedModeBanner: false,
     title: title,
-    theme: ThemeData(primarySwatch: Colors.blue),
+    color: Colors.black38,
     home: MainPage(),
   );
 }
@@ -34,8 +34,10 @@ class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) => Scaffold(
     drawer: NavigationDrawerWidget(),
+    backgroundColor: Colors.white,
     // endDrawer: NavigationDrawerWidget(),
     appBar: AppBar(
+      backgroundColor: Colors.black87,
       title: Text(MyApp.title),
     ),
      // Scaffold.of(context).openEndDrawer()

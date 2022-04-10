@@ -13,14 +13,15 @@ class UserPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Scaffold(
     appBar: AppBar(
-      backgroundColor: Colors.pink,
+      backgroundColor: Color.fromARGB(255, 124, 115, 63),
       title: Text(name),
       centerTitle: true,
     ),
-    body: Image.network(
+    body:
+    Image.network(
       urlImage,
-      width: double.infinity,
-      height: double.infinity,
+      width: 200,
+      height: 200,
       fit: BoxFit.cover,
     ),
   );

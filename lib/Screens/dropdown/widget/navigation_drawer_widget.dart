@@ -10,8 +10,9 @@ class NavigationDrawerWidget extends StatelessWidget {
     final urlImage =
 'https://media.newyorker.com/photos/59095bb86552fa0be682d9d0/master/pass/Monkey-Selfie.jpg';
     return Drawer(
+      backgroundColor: Colors.black,
       child: Material(
-        color: Color.fromARGB(255, 17, 18, 24),
+        color: Color.fromARGB(255, 27, 29, 39),
         child: ListView(
           children: <Widget>[
             buildHeader(
@@ -44,7 +45,7 @@ class NavigationDrawerWidget extends StatelessWidget {
           child: Row(
             children: [
               CircleAvatar(radius: 30, backgroundImage: NetworkImage(urlImage)),
-              SizedBox(width: 20),
+              SizedBox(width: 21),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -60,39 +61,10 @@ class NavigationDrawerWidget extends StatelessWidget {
                 ],
               ),
               Spacer(),
-              CircleAvatar(
-                radius: 24,
-                backgroundColor: Color.fromRGBO(30, 60, 168, 1),
-                child: Icon(Icons.add_comment_outlined, color: Colors.white),
-              )
             ],
           ),
         ),
       );
-
-  Widget buildSearchField() {
-    final color = Colors.white;
-
-    return TextField(
-      style: TextStyle(color: color),
-      decoration: InputDecoration(
-        contentPadding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
-        hintText: 'Search',
-        hintStyle: TextStyle(color: color),
-        prefixIcon: Icon(Icons.search, color: color),
-        filled: true,
-        fillColor: Colors.white12,
-        enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(5),
-          borderSide: BorderSide(color: color.withOpacity(0.7)),
-        ),
-        focusedBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(5),
-          borderSide: BorderSide(color: color.withOpacity(0.7)),
-        ),
-      ),
-    );
-  }
 
   Widget buildMenuItem({
     @required String text,
