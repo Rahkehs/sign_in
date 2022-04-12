@@ -17,7 +17,7 @@ class UserPage extends StatelessWidget {
 
     appBar: AppBar(
       backgroundColor: Color.fromARGB(255, 28, 28, 26),
-      title: Text(name),
+      title: Text("User Profile"),
       centerTitle: true,
     ),
     body: Row( mainAxisAlignment: MainAxisAlignment.center,
