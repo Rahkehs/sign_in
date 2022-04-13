@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_auth/Screens/Welcome/components/body.dart';
+import 'package:flutter_auth/components/text_field_container.dart';
 class UserPage extends StatelessWidget {
   final String name;
   final String urlImage;
